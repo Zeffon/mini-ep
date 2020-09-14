@@ -1,0 +1,8 @@
+<view bind:tap="onTap" class="container tag-class">
+<slot name="before"></slot>
+  <text>{{text}}</text>
+  <slot name="after"></slot>
+  <!-- slot 插槽 与属性行为非常相似，都是从外部向内部传递数据 -->
+</view>
+
+<!-- 普通样式  外部样式 -->

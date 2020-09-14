@@ -1,0 +1,9 @@
+<view class='container'>
+    <view class='head-container' bindtap='selectToggle'>
+        <view class='title'>{{selectTitle}}</view>
+        <image src='/imgs/icon/down.png'  class='img'  animation="{{animationData}}"></image>
+    </view>
+    <view class='list' wx:if="{{selectShow}}">
+        <view wx:for="{{propArray}}" data-index="{{index}}" wx:key='index' class='item' bindtap='setText'>{{item.name}}</view>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "z-select": "/components/select/index",
+    "z-search": "/components/search/index",
+    "z-box": "/components/box/index"
+  }
+}

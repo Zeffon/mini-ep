@@ -1,0 +1,27 @@
+<view wx:if="{{!searching}}" class='container'>
+  <view class='header'>
+    <view class="select">
+      <z-select prop-array='{{selectArea}}' bind:select='onSelectArea'></z-select>
+    </view>
+    <view class='box' bind:tap="onSearching">
+      <image src="/imgs/icon/search.png" />
+      <text>姓名搜索</text>
+    </view>
+  </view>
+
+  <swiper class="swiper" indicator-dots indicator-active-color="#22B130" autoplay circular>
+    <block wx:for="{{banners}}" wx:key="index">
+      <swiper-item>
+        <image class="swiper" src="{{item.img}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='sub-container'>
+    <block wx:for="{{losts}}" wx:key="index">
+      <z-box lost="{{item}}"></z-box>
+    </block>
+  </view>
+</view>
+
+<z-search more="{{more}}" bind:cancel="onCancel" wx:if="{{searching}}" />

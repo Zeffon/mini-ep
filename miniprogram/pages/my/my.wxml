@@ -1,0 +1,24 @@
+<view class="container">
+    <image src="/imgs/my/my@bg.jpg" class="bg"></image>
+    <view class="sub-container">
+        <image-button wx:if="{{!authorized}}" open-type="getUserInfo" class="avatar-position" bind:getuserinfo="onGetUserInfo">
+            <image slot="img" class="avatar" src="/imgs/my/click_me.png"></image>
+        </image-button>
+        <view wx:if="{{authorized}}" class="avatar-container avatar-position">
+            <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+            <text class="nickname">{{userInfo.nickName}}</text>
+        </view>
+    </view>
+
+    <view class="contact-container">
+        <z-button special="{{true}}" open-type="contact">
+            <z-icon size="80" name="contact" l-class="yusu"></z-icon>
+        </z-button>
+    </view>
+
+    <view wx:if="{{isShowRemark}}" class="remark" style="position:fixed;bottom:0;">
+        <text>{{remark.author}}</text>
+        <text>{{remark.version}}</text>
+    </view>
+
+</view>

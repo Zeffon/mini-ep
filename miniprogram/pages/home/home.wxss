@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select {
+  margin-left: 6rpx;
+}
+
+.header {
+  position: fixed; /* 固定搜索框 */
+  background-color: #ffffff;
+  height: 100rpx;
+  width: 100%;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3px 0 #e3e3e3;
+  z-index: 99;  /* 与固定有关 */
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #f5f5f5;
+  height: 68rpx;
+  width: 700rpx;
+  color: #999999;
+}
+
+.box image {
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  margin-bottom: -2px;
+}
+
+.swiper {
+  width: 100%;
+  height: 400rpx;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-top: 10rpx;
+}

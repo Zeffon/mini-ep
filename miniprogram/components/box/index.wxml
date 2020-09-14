@@ -1,0 +1,22 @@
+
+<view class="container" data-lid="{{lost._id}}" bindtap="onItemTap" hover-class="rect-hover">
+  <l-card type="primary"
+          l-img-class="right-card"
+          position="left"
+          image="{{lost.imgUrl}}"
+          title="{{lost.name}}">
+    <view class="content">
+      <text>性别：</text>
+      <text>{{lost.gender == 1 ? '男' : '女'}}</text>
+    </view>
+    <view class="content">
+      <text>年龄：</text>
+      <text>{{lost.age}}</text>
+    </view>
+    <view class="content">
+      <text>走失地点：</text>
+      <text>{{lost.lostLocation}}</text>
+    </view>
+  </l-card>
+</view>
+

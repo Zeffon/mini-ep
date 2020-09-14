@@ -1,0 +1,18 @@
+/* miniprogram/pages/lostDetail/lostDetail.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  color: #333333;
+}
+
+.img {
+  width: 96%;
+}
+

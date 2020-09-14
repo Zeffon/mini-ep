@@ -1,0 +1,15 @@
+<wxs src="../../wxs/time.wxs" module="t"></wxs>
+
+<view class="container" wx:if="{{lost}}">
+  <view class="content-container">
+    <view>姓名： {{lost.name}}</view>
+    <view>性别： {{lost.gender == 1 ? '男' : '女'}}</view>
+    <view>年龄： {{lost.age}}</view>
+    <view>走失地点： {{lost.lostLocation}}</view>
+    <view>走失时间： {{t.toTime(lost.lostTime)}}</view>
+    <view>描述： {{lost.desc}}</view>
+    <view>联系人： {{lost.contacts}}</view>
+    <view>联系方式： {{lost.mobile}}</view>
+  </view>
+  <image mode="widthFix" class="img" src="{{lost.imgUrl}}"></image>
+</view>

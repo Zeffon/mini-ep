@@ -1,0 +1,58 @@
+/* miniprogram/pages/my/my.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg {
+  width: 750rpx;
+  height: 574rpx;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.avatar-position {
+  position: absolute;
+  top: 255rpx;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 30rpx;
+}
+
+.nickname {
+  color: #333333;
+}
+
+.contact-container {
+  position: fixed;
+  bottom: 30rpx;
+  right: 40rpx;
+}
+
+.remark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.remark text{
+  font-size: 18rpx;
+  color: rgba(140, 152, 174, 1);
+}
